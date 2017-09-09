@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+b405686bcd743c0aa902004eae7335db src/java/kodijavaJAVA_wrap.cxx
+0450b44a89740b2d1185d11b08490d50 src/javascript/kodidevkitjsJAVASCRIPT_wrap.cxx
+565f4ba9e0eeacde129fda3755d76a04 src/lua/kodidevkitluaLUA_wrap.cxx
+e608880608d391d973b051dd8223460d src/python/python2/kodidevkit2PYTHON_wrap.cxx
+f0f2e8d1287b72db274a62a9f649a59a src/python/python3/kodidevkit3PYTHON_wrap.cxx

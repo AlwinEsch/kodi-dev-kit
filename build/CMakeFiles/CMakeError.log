@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd8ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd8ce.dir/build.make CMakeFiles/cmTC_cd8ce.dir/build
+make[1]: Verzeichnis „/home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_cd8ce.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_cd8ce.dir/CheckSymbolExists.cxx.o -c /home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_cd8ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd8ce.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cd8ce.dir/CheckSymbolExists.cxx.o  -o cmTC_cd8ce 
+CMakeFiles/cmTC_cd8ce.dir/CheckSymbolExists.cxx.o: In Funktion `main':
+CheckSymbolExists.cxx:(.text+0x1b): Nicht definierter Verweis auf `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cd8ce.dir/build.make:97: die Regel für Ziel „cmTC_cd8ce“ scheiterte
+make[1]: *** [cmTC_cd8ce] Fehler 1
+make[1]: Verzeichnis „/home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp“ wird verlassen
+Makefile:126: die Regel für Ziel „cmTC_cd8ce/fast“ scheiterte
+make: *** [cmTC_cd8ce/fast] Fehler 2
+
+File /home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3450f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3450f.dir/build.make CMakeFiles/cmTC_3450f.dir/build
+make[1]: Verzeichnis „/home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_3450f.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++     -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3450f.dir/CheckFunctionExists.cxx.o -c /home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_3450f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3450f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3450f.dir/CheckFunctionExists.cxx.o  -o cmTC_3450f -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3450f.dir/build.make:97: die Regel für Ziel „cmTC_3450f“ scheiterte
+make[1]: *** [cmTC_3450f] Fehler 1
+make[1]: Verzeichnis „/home/alwin/Development/kodi-dev-kit/build/CMakeFiles/CMakeTmp“ wird verlassen
+Makefile:126: die Regel für Ziel „cmTC_3450f/fast“ scheiterte
+make: *** [cmTC_3450f/fast] Fehler 2
+
+

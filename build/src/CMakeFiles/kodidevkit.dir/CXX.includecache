@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alwin/Development/kodi-dev-kit/src/kodi.cpp
+kodi.h
+/home/alwin/Development/kodi-dev-kit/src/kodi.h
+stdarg.h
+-
+
+/home/alwin/Development/kodi-dev-kit/src/kodi.h
+string
+-
+

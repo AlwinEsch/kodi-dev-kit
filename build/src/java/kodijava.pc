@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: kodidevkit
+Description: Library who bring java interface between a addon and Kodi
+Version: 1.0.0
+
+Libs: -L${libdir} -lkodijava
+Cflags: -I${includedir}
