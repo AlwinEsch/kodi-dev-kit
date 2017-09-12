@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -fPIC  -shared  -o _kodi.so CMakeFiles/_python3-kodidevkit.dir/kodidevkit3PYTHON_wrap.cxx.o /usr/lib/x86_64-linux-gnu/libpython3.5m.so ../../libkodidevkit.a -lpthread 

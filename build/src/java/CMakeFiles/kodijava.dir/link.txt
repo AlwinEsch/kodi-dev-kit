@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -fPIC -fpermissive -DJAVACALLBACK  -shared  -o libkodijava.so CMakeFiles/kodijava.dir/kodijavaJAVA_wrap.cxx.o ../libkodidevkit.a -lpthread 

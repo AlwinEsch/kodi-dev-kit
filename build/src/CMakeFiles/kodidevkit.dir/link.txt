@@ -1,2 +1,0 @@
-/usr/bin/ar qc libkodidevkit.a  CMakeFiles/kodidevkit.dir/kodi.cpp.o
-/usr/bin/ranlib libkodidevkit.a

@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -fPIC  -shared  -o kodidevkit.node CMakeFiles/kodidevkitjs.dir/kodidevkitjsJAVASCRIPT_wrap.cxx.o ../libkodidevkit.a -lpthread 
