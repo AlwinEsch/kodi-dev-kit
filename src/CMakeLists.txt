@@ -1,5 +1,8 @@
+find_package(CrossGUID REQUIRED)
+
 set(kodidevkit_LIB_INCLUDE_DIRS
   ${PROJECT_SOURCE_DIR}/include
+  ${PROJECT_SOURCE_DIR}/include/kodi
 )
 
 include_directories(
@@ -7,7 +10,11 @@ include_directories(
 )
 
 set(kodidevkit_LIB_SRCS_NOAUTO
-  ${PROJECT_SOURCE_DIR}/src/kodi.cpp
+  ${PROJECT_SOURCE_DIR}/src/Addon.cpp
+  ${PROJECT_SOURCE_DIR}/src/AddonBase.cpp
+  ${PROJECT_SOURCE_DIR}/src/tools.cpp
+  ${PROJECT_SOURCE_DIR}/src/SharedMemory.cpp
+  ${PROJECT_SOURCE_DIR}/src/SharedMemoryPosix.cpp
 )
 
 set(kodidevkit_LIB_SRCS
@@ -25,7 +32,8 @@ set(kodidevkit_LIB_SRCS
 #   endif()
 # endif()
 
-set (kodidevkit_LIBS ${CMAKE_THREAD_LIBS_INIT})
+set (kodidevkit_LIBS ${CMAKE_THREAD_LIBS_INIT}
+                     ${CROSSGUID_LIBRARIES})
 
 if(X86PLAT)
   add_subdirectory(x86)

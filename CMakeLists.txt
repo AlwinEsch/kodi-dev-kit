@@ -6,6 +6,7 @@ set(VERSION_MINOR 0)
 set(VERSION_PATCH 0)
 
 find_package(Threads REQUIRED)
+find_package(Kodi REQUIRED)
 
 include(CheckCCompilerFlag)
 include(CheckCXXCompilerFlag)
@@ -26,10 +27,10 @@ endif()
 #     set(BUILD_SHARED_LIBS ON)
 #   endif()
 # endif()
-if (NOT WIN32)
-  list(APPEND CMAKE_C_FLAGS "-fPIC")
-  list(APPEND CMAKE_CXX_FLAGS "-fPIC")
-endif()
+#if (NOT WIN32)
+#  list(APPEND CMAKE_C_FLAGS "-fPIC")
+#  list(APPEND CMAKE_CXX_FLAGS "-fPIC")
+#endif()
 
 # Appends the cmake/modules path to MAKE_MODULE_PATH variable.
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
